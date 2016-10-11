@@ -1,6 +1,6 @@
-# Beyond Self Bot Version 2.5
+# Yaghi Self Bot Version 2.5
 
-**An Fun bot based on [TeleSeed](https://github.com/SEEDTEAM/TeleSeed) licensed under the [GNU General Public License](https://github.com/BeyondTeam/Self-Bot/blob/master/LICENSE)**.
+**A Fun bot based on [TeleSeed](https://github.com/SEEDTEAM/TeleSeed) & [BeyondTeam](https://github.com/BeyondTeam/Self-Bot) licensed under the [GNU General Public License](https://github.com/BeyondTeam/Self-Bot/blob/master/LICENSE)**.
 
 #Don't Forget Star To Us :)
 #یادتون نره بهمون ستاره بدید :)
@@ -14,8 +14,8 @@
 ```
 sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev
 cd $HOME
-git clone https://github.com/BeyondTeam/Self-Bot.git -b supergroups
-cd Self-Bot
+git clone https://github.com/AaMegaTeam/SelfBot.git -b supergroups
+cd SelfBot
 chmod +x launch.sh
 ./launch.sh install
 cd .luarocks/bin
@@ -50,15 +50,15 @@ Then Enter Your Phone And Confirmation Code
 #برای ران کردن ربات با اتو لانچ از دستورات زیر استفاده کنید.
 ###For Launch With AutoLaunch :
 ```
-chmod 777 beyond.sh
-screen ./beyond.sh
+chmod 777 YaghiTeam.sh
+screen ./YaghiTeam.sh
 ```
 
 #Developer&Founder : 
-#[SoLiD021](https://telegram.me/SoLiD021)
+#[Amin](https://telegram.me/teshne)
 
 #Developer&Manager : 
-#[AliReza](https://telegram.me/CliApi)
+#[Hossein](https://telegram.me/Horizon_rz)
 
 * * *
 
@@ -67,13 +67,13 @@ screen ./beyond.sh
 
 ###And All My Friends :D
 
-#Team Channel :
+# Channel :
 
-#[@BeyondTeam](https://telegram.me/BeyondTeam)
+#[@pedaret](https://telegram.me/pedaret)
 
 ###اگر مشکلی داشتید به لینک زیر بیاید و مطرح کنید
-###If You Have Any Problem With Source, Join To Link And Ask About Your Problem
-#[White And TeleBeyond Support](https://telegram.me/joinchat/DH-5lD7jQzzdiI3gnh4p4A)
+###If You Have Any Problem With Source ask #[@pedaret](https://telegram.me/pedaret)
+
 
 #موفق باشید -_-
 #Good Luck -_-
