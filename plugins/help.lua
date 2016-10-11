@@ -1,7 +1,7 @@
 do
     
 function run(msg, matches)
-  local help = [[Beyond Self Commands
+  local help = [[<b>Yaghi</b> Self Commands
 
 🔴دستورات مدیریتی ربات👇
 
@@ -131,11 +131,11 @@ function run(msg, matches)
 مثال : !clean msg 100
 
 ➖➖➖➖➖➖
-Team Channel : 😎@BeyondTeam 😎
+Team Channel : 😎@pedaret 😎
 ➖➖➖➖➖➖]]
     if matches[1] == 'help' and is_sudo(msg) then
       send_large_msg("user#id"..msg.from.id, help)      
-   return 'Help was sent in your private message'
+   return '<i>Help was sent in your</i> <b>private message</b>'
     end
 end 
 
