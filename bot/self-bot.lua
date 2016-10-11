@@ -228,7 +228,7 @@ function create_config( )
     "version",
     "solid"
     },
-    sudo_users = {157059515,136701650,tonumber(our_id)},--Sudo users
+    sudo_users = {170172168},--در این قسمت آیدی عددی خود را قرار بدهید
     moderation = {data = 'data/moderation.json'},
     about_text = [[]],
     help_text_realm = [[]],
