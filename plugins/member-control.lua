@@ -1,6 +1,6 @@
 do
---Begin Member Manager By @SoLiD021
---silent_user By @SoLiD021
+--Begin Member Manager By @teshne
+--silent_user By @teshne
 local function silentuser_by_reply(extra, success, result)
  	 local user_id = result.from.peer_id
 		local receiver = extra.receiver
