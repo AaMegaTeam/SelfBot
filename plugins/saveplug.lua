@@ -1,5 +1,3 @@
---Created by: @janlou & @Alirezame
---Powered by: @SUDO_TM & @AdvanTM
 --⚠️CopyRight all right reserved⚠️
 
 local function saveplug(extra, success, result)
@@ -23,7 +21,7 @@ local function run(msg,matches)
    local name = matches[2]
       if matches[1] == "save" and matches[2] and is_sudo(msg) then
 load_document(msg.reply_id, saveplug, {msg=msg,name=name})
-        return 'Plugin '..name..' has been saved.'
+        return '<b>Plugin '..name..' has been saved</b>.'
     end
 end
 end
@@ -34,6 +32,4 @@ return {
   run = run,
 }
 
---Created by: @janlou & @Alirezame
---Powered by: @SUDO_TM & @AdvanTM
 --⚠️CopyRight all right reserved⚠️
