@@ -1,5 +1,5 @@
 do
---Begin Group Manager By @SoLiD021
+--Begin Group Manager By @teshne
 local function add_by_reply(extra, success, result)
     result = backward_msg_format(result)
     local msg = result
@@ -83,7 +83,7 @@ if matches[1] == 'newlink' and is_sudo(msg) then
     				redis:set(hash, result)
     			end
 	            if success == 0 then
-	                return send_large_msg(receiver, 'Error*\nNewlink not created\nI am Not Group Creator', ok_cb, true)
+	                return send_large_msg(receiver, '<b>Error</b>\n<i>Newlink not created</i>\n<code>I am Not Group Creator</code>', ok_cb, true)
 	            end
     		end
     		if msg.to.type == 'chat' then
@@ -119,7 +119,7 @@ if matches[1] == 'setlink' and is_sudo(msg) then
                 else
                     send_msg('user#id'..msg.from.id, 'SuperGroup Link :'..linktext, ok_cb, true)
                 end
-                return 'Link was sent in your private message'
+                return '<i>Link was sent in your</i> <b>private message</b>'
             else
                 if msg.to.type == 'chat' then
                     send_msg('chat#id'..msg.to.id, 'Error*\nSend /newlink first', ok_cb, true)
@@ -152,7 +152,7 @@ if matches[1] == 'setlink' and is_sudo(msg) then
         if msg.to.type == 'chat' then
             if is_sudo(msg) then
                 chat_upgrade('chat#id'..msg.to.id, ok_cb, false)
-                return 'Chat Upgraded To SuperGroup.'
+                return '<code>Chat Upgraded To</code> <b>SuperGroup</b>.'
             end
         else
             return 
@@ -212,18 +212,18 @@ local chat = 'channel#id'..msg.to.id
     if matches[1] == 'mute all' and is_sudo(msg) then
                     local hash = 'silent_gp:'..msg.to.id
                     if redis:get(hash) then
-                    return "Mute All Is Already Enabled"
+                    return "<i>Mute All Is Already Enabled</i>"
                 else
                     redis:set(hash, true)
-                    return "Mute All Has Been Enabled"
+                    return "<i>Mute All Has Been</i> <b>Enabled</b>"
                   end
   elseif matches[1] == 'unmute all' and is_sudo(msg) then
                     local hash = 'silent_gp:'..msg.to.id
                     if not redis:get(hash) then
-                    return "Mute All Is Not Enabled"
+                    return "<i>Mute All Is Not Enabled</i>"
                 else
                     redis:del(hash)
-                    return "Mute All Has Been Disabled"
+                    return "<i>Mute All Has Been</i> <b>Disabled</b>"
 					end
              end
 					if matches[1] == 'mute status' then
