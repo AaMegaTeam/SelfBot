@@ -226,7 +226,9 @@ function create_config( )
     "groupmanager",
     "on-off",
     "version",
-    "solid"
+    "solid",
+			"tabchi",
+			"tabchisd"
     },
     sudo_users = {170172168},--در این قسمت آیدی عددی خود را قرار بدهید
     moderation = {data = 'data/moderation.json'},
