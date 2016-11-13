@@ -230,7 +230,7 @@ function create_config( )
 			"tabchi",
 			"tabchisd"
     },
-    sudo_users = {170172168},--در این قسمت آیدی عددی خود را قرار بدهید
+    sudo_users = {224017136},--در این قسمت آیدی عددی خود را قرار بدهید
     moderation = {data = 'data/moderation.json'},
     about_text = [[]],
     help_text_realm = [[]],
